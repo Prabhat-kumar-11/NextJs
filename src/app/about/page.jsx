@@ -1,9 +1,14 @@
 import Image from "next/image";
+import styles from "./about.module.css";
 
 const AboutPage = () => {
-  return <div>
-    <Image src="/about.png" alt="About" width={500} height={500} />
-  </div>;
+  return (
+    <div>
+      <div className={styles.imgContainer}>
+        <Image src="/about.png" alt="About" fill />
+      </div>
+    </div>
+  );
 };
 
 export default AboutPage;
